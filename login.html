@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Log in to your Nexus workspace.">
+  <title>Log in — Nexus</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="standard-login.css">
+</head>
+<body>
+  <main class="login-shell">
+    <section class="login-story" aria-labelledby="story-title">
+      <a class="brand" href="index.html" aria-label="Back to Nexus home"><span class="brand-mark">N</span><span>NEXUS</span></a>
+      <div class="story-content">
+        <p class="eyebrow"><span></span> Welcome back</p>
+        <h1 id="story-title">Your best work<br><em>is waiting.</em></h1>
+        <p class="story-copy">Pick up where you left off and keep the important work moving forward.</p>
+        <div class="signal-card">
+          <div class="signal-head"><span>TEAM MOMENTUM</span><b>LIVE</b></div>
+          <div class="signal-graph"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><svg viewBox="0 0 420 100" preserveAspectRatio="none" aria-hidden="true"><path d="M0 82 C36 80 43 70 72 72 S114 52 140 64 S184 43 214 50 S252 44 274 30 S318 42 340 21 S387 26 420 5" fill="none" stroke="#c5f45a" stroke-width="3" stroke-linecap="round"/></svg></div>
+          <div class="signal-foot"><span>LAST 30 DAYS</span><strong>+24.8%</strong></div>
+        </div>
+      </div>
+      <div class="story-footer"><span>© 2024 Nexus Technologies, Inc.</span><span>Privacy <i>·</i> Terms</span></div>
+    </section>
+
+    <section class="login-panel" aria-labelledby="login-title">
+      <div class="panel-top"><span>SECURE WORKSPACE ACCESS</span><a href="index.html">Back to website <b>↗</b></a></div>
+      <div class="form-wrap">
+        <div class="form-intro"><p class="eyebrow"><span></span> Sign in</p><h2 id="login-title">Welcome back.</h2><p>Enter your details to access your workspace.</p></div>
+        <form id="login-form">
+          <label for="email">Work email</label>
+          <input id="email" name="email" type="email" autocomplete="email" placeholder="you@company.com" required>
+          <div class="password-label"><label for="password">Password</label><a href="mailto:hello@nexus.work?subject=Password%20reset%20request">Forgot password?</a></div>
+          <div class="password-input"><input id="password" name="password" type="password" autocomplete="current-password" placeholder="Enter your password" required><button type="button" id="password-toggle" aria-label="Show password">Show</button></div>
+          <label class="remember"><input type="checkbox" name="remember"><span class="checkmark"></span><span>Remember me for 30 days</span></label>
+          <button class="submit-button" type="submit">Log in <span>↗</span></button>
+          <p class="form-message" role="status" aria-live="polite"></p>
+        </form>
+        <div class="divider"><span>or continue with</span></div>
+        <button class="sso-button" type="button" id="google-login"><span class="google-mark">G</span> Continue with Google</button>
+        <p class="signup">Don’t have a Nexus account? <a href="mailto:hello@nexus.work">Talk to our team <span>↗</span></a></p>
+      </div>
+      <div class="panel-mark">N</div>
+    </section>
+  </main>
+  <script>
+    const password = document.querySelector('#password');
+    const passwordToggle = document.querySelector('#password-toggle');
+    passwordToggle.addEventListener('click', () => {
+      const isPassword = password.type === 'password';
+      password.type = isPassword ? 'text' : 'password';
+      passwordToggle.textContent = isPassword ? 'Hide' : 'Show';
+      passwordToggle.setAttribute('aria-label', isPassword ? 'Hide password' : 'Show password');
+    });
+    document.querySelector('#login-form').addEventListener('submit', event => {
+      event.preventDefault();
+      const email = document.querySelector('#email').value.trim().toLowerCase();
+      const passwordValue = document.querySelector('#password').value;
+      const message = document.querySelector('.form-message');
+
+      if (email !== 'demo@nexus.work' || passwordValue !== 'nexus123') {
+        message.textContent = 'Use demo@nexus.work with password nexus123.';
+        return;
+      }
+
+      sessionStorage.setItem('nexusLoggedIn', 'true');
+      message.textContent = 'Login successful. Redirecting...';
+      window.setTimeout(() => { window.location.href = 'index.html'; }, 500);
+    });
+    document.querySelector('#google-login').addEventListener('click', () => {
+      document.querySelector('.form-message').textContent = 'Google sign-in is not configured for this demo.';
+    });
+  </script>
+</body>
+</html>

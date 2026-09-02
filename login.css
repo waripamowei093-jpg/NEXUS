@@ -1,0 +1,47 @@
+* {
+     box-sizing: border-box;
+     }
+html { 
+    min-height: 100%; 
+}
+body { 
+    margin: 0; font-family: 'Manrope', sans-serif; font-size: 14px;
+ }
+a {
+     color: inherit; text-decoration: none;
+     }
+.login-shell { 
+    min-height: 100vh; display: grid;
+ }
+.login-story {
+     color: #fff; display: flex; flex-direction: column; position: relative; overflow: hidden; 
+    }
+.brand {
+     display: flex; align-items: center; gap: 10px; font-size: 14px; font-weight: 800; position: relative; z-index: 1; 
+    }
+.brand-mark {
+     display: grid; place-items: center; width: 28px; height: 28px; font-size: 15px; }
+.story-content, .story-footer { position: relative; z-index: 1; }
+.story-content h1 { line-height: .99; margin: 0; }
+.story-content h1 em { font-style: normal; }
+.eyebrow { display: flex; align-items: center; gap: 12px; margin: 0 0 23px; font: 500 10px 'DM Mono', monospace; letter-spacing: .08em; text-transform: uppercase; }
+.eyebrow span { width: 31px; height: 1px; background: currentColor; }
+.login-panel { display: flex; flex-direction: column; position: relative; }
+.panel-top { display: flex; justify-content: space-between; align-items: center; }
+.form-wrap { margin: auto; }
+.form-intro h2 { line-height: 1; margin: 0; }
+form label { display: block; }
+.password-label { display: flex; justify-content: space-between; align-items: center; }
+.password-label label { margin: 0; }
+.password-input { position: relative; }
+.password-input input { padding-right: 60px; }
+.password-input button { position: absolute; right: 13px; bottom: 13px; border: 0; background: none; cursor: pointer; }
+.remember { display: flex; align-items: center; gap: 9px; cursor: pointer; }
+.remember input { position: absolute; opacity: 0; }
+.checkmark { display: inline-block; position: relative; width: 15px; height: 15px; }
+.submit-button, .sso-button { cursor: pointer; }
+.submit-button { display: flex; justify-content: space-between; }
+.divider { display: flex; align-items: center; gap: 12px; }
+.divider:before, .divider:after { content: ''; height: 1px; flex: 1; background: #dce3ed; }
+.sso-button { display: flex; align-items: center; justify-content: center; gap: 9px; }
+.signup { text-align: center; }

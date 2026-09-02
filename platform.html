@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore the Nexus operating platform for ambitious teams.">
+  <title>Platform — Nexus</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="standard.css">
+</head>
+<body>
+  <div class="announcement"><span class="pulse"></span> Nexus 3.0 is live <a href="#solutions">See what’s new <span>↗</span></a></div>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="index.html" aria-label="Nexus home"><span class="brand-mark">N</span><span>NEXUS</span></a>
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span></button>
+      <div class="nav-links"><a href="platform.html">Platform</a><a href="#solutions">Solutions</a><a href="index.html#customers">Customers</a><a href="index.html#company">Company</a></div>
+      <div class="nav-actions"><a class="login" href="login.html">Log in</a><a class="button button-dark" href="index.html#contact">Book a demo <span>↗</span></a></div>
+    </nav>
+  </header>
+  <main id="top">
+    <section class="intro section"><div class="container intro-grid"><div><p class="eyebrow"><span class="eyebrow-line"></span> The Nexus platform</p><h1 class="platform-title">One clear view<br><em>of what’s next.</em></h1></div><div><p class="section-lead">The way we work changed. The tools we use didn’t. Nexus is the connective tissue between your strategy and the everyday, designed to turn scattered signals into confident action.</p><a class="arrow-link" href="#solutions">Explore the system <span>↘</span></a></div></div></section>
+    <section class="features section" id="solutions"><div class="container feature-grid"><article class="feature feature-dark"><div class="feature-number">01 / 04</div><div class="feature-symbol">⌁</div><h2>See the<br><em>whole picture.</em></h2><p>Unite every project, priority, and signal in a living view of your business.</p><a class="feature-link" href="index.html#contact">Explore visibility <span>↗</span></a><div class="mini-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></article><article class="feature feature-yellow"><div class="feature-number">02 / 04</div><div class="feature-symbol">✦</div><h2>Move with<br><em>intention.</em></h2><p>Replace status meetings with the context your team needs, exactly when they need it.</p><a class="feature-link" href="index.html#contact">Explore alignment <span>↗</span></a><div class="orbit"><span></span><b>24</b></div></article><article class="feature feature-coral"><div class="feature-number">03 / 04</div><div class="feature-symbol">◌</div><h2>Make space for<br><em>great work.</em></h2><p>Automate the noise. Give your best people more room to think, create, and lead.</p><a class="feature-link" href="index.html#contact">Explore automation <span>↗</span></a><div class="sparkle">✦</div></article><article class="feature feature-white"><div class="feature-number">04 / 04</div><div class="feature-symbol">↗</div><h2>Know what’s<br><em>next.</em></h2><p>Turn momentum into a habit with intelligent insights built for action.</p><a class="feature-link" href="index.html#contact">Explore intelligence <span>↗</span></a><div class="line-art"><span></span><span></span><span></span></div></article></div></section>
+    <section class="platform-detail section"><div class="container detail-grid"><div><p class="eyebrow"><span class="eyebrow-line"></span> Built for momentum</p><h2>Everything aligned.<br><em>Nothing in the way.</em></h2></div><div class="detail-list"><div><b>01</b><div><h3>Live context</h3><p>See priorities, progress, and capacity in one shared source of truth.</p></div></div><div><b>02</b><div><h3>Intelligent signals</h3><p>Spot the patterns that matter before they become blockers.</p></div></div><div><b>03</b><div><h3>Actionable rhythm</h3><p>Turn insight into the next clear move for every team.</p></div></div></div></div></section>
+    <section class="cta section"><div class="container cta-inner"><div class="cta-orbit orbit-one"></div><div class="cta-orbit orbit-two"></div><p class="eyebrow light"><span class="eyebrow-line"></span> See it in motion</p><h2>Make work<br><em>work better.</em></h2><p>Join the teams building what comes next.</p><div class="hero-actions"><a class="button button-acid" href="index.html#contact">Book a demo <span>↗</span></a><a class="button button-outline" href="index.html">Back to home <span>↗</span></a></div></div></section>
+  </main>
+  <footer class="footer" id="footer"><div class="container footer-top" id="company"><a class="brand brand-footer" href="index.html"><span class="brand-mark">N</span><span>NEXUS</span></a><p>Tools for the<br>work that matters.</p><div class="footer-links"><div><b>Explore</b><a href="platform.html">Platform</a><a href="#solutions">Solutions</a><a href="index.html#customers">Customers</a></div><div><b>Company</b><a href="index.html#company">About us</a><a href="index.html#contact">Careers <small>We’re hiring</small></a><a href="index.html#contact">Contact</a></div><div><b>Follow</b><a href="#footer">LinkedIn ↗</a><a href="#footer">Instagram ↗</a><a href="#footer">X / Twitter ↗</a></div></div></div><div class="container footer-bottom"><span>© 2024 Nexus Technologies, Inc.</span><span>Privacy <i>·</i> Terms <i>·</i> Security</span><span>Made for momentum <b>↗</b></span></div></footer>
+  <script>const toggle = document.querySelector('.menu-toggle'); const links = document.querySelector('.nav-links'); toggle.addEventListener('click', () => { const open = toggle.getAttribute('aria-expanded') === 'true'; toggle.setAttribute('aria-expanded', String(!open)); links.classList.toggle('open'); }); document.querySelectorAll('.nav-links a').forEach(link => link.addEventListener('click', () => { toggle.setAttribute('aria-expanded', 'false'); links.classList.remove('open'); }));</script>
+</body>
+</html>
