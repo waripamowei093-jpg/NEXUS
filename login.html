@@ -278,7 +278,7 @@
             <input
               id="email"
               name="email"
-              type="email"
+              type="text"
               autocomplete="email"
               inputmode="email"
               placeholder="you@company.com"
@@ -321,7 +321,6 @@
                 type="password"
                 autocomplete="current-password"
                 placeholder="Enter your password"
-                minlength="6"
                 required
                 aria-describedby="password-error"
               >
@@ -582,18 +581,6 @@
 
           valid = false;
 
-        } else if (!emailInput.validity.valid) {
-
-          emailError.textContent =
-            "Please enter a valid email address.";
-
-          emailInput.setAttribute(
-            "aria-invalid",
-            "true"
-          );
-
-          valid = false;
-
         }
 
 
@@ -601,20 +588,6 @@
 
           passwordError.textContent =
             "Please enter your password.";
-
-          passwordInput.setAttribute(
-            "aria-invalid",
-            "true"
-          );
-
-          valid = false;
-
-        } else if (
-          passwordInput.value.length < 6
-        ) {
-
-          passwordError.textContent =
-            "Password must be at least 6 characters.";
 
           passwordInput.setAttribute(
             "aria-invalid",
