@@ -1,80 +1,760 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Log in to your Nexus workspace.">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Securely log in to your Nexus workspace."
+  >
+
+  <meta
+    name="theme-color"
+    content="#111111"
+  >
+
   <title>Log in — Nexus</title>
+
+
+  <!-- ========================================
+       FONTS
+  ========================================= -->
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="login.css">
-  <link rel="stylesheet" href="standard-login.css">
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+
+  <!-- ========================================
+       STYLES
+  ========================================= -->
+
+  <link
+    rel="stylesheet"
+    href="login.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="standard-login.css"
+  >
 </head>
+
+
 <body>
+
   <main class="login-shell">
-    <section class="login-story" aria-labelledby="story-title">
-      <a class="brand" href="index.html" aria-label="Back to Nexus home"><span class="brand-mark">N</span><span>NEXUS</span></a>
+
+    <!-- ======================================
+         LEFT / STORY PANEL
+    ======================================= -->
+
+    <section
+      class="login-story"
+      aria-labelledby="story-title"
+    >
+
+      <!-- Brand -->
+      <a
+        class="brand"
+        href="index.html"
+        aria-label="Back to Nexus home"
+      >
+
+        <span
+          class="brand-mark"
+          aria-hidden="true"
+        >
+          N
+        </span>
+
+        <span>NEXUS</span>
+
+      </a>
+
+
+      <!-- Story Content -->
       <div class="story-content">
-        <p class="eyebrow"><span></span> Welcome back</p>
-        <h1 id="story-title">Your best work<br><em>is waiting.</em></h1>
-        <p class="story-copy">Pick up where you left off and keep the important work moving forward.</p>
-        <div class="signal-card">
-          <div class="signal-head"><span>TEAM MOMENTUM</span><b>LIVE</b></div>
-          <div class="signal-graph"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><svg viewBox="0 0 420 100" preserveAspectRatio="none" aria-hidden="true"><path d="M0 82 C36 80 43 70 72 72 S114 52 140 64 S184 43 214 50 S252 44 274 30 S318 42 340 21 S387 26 420 5" fill="none" stroke="#c5f45a" stroke-width="3" stroke-linecap="round"/></svg></div>
-          <div class="signal-foot"><span>LAST 30 DAYS</span><strong>+24.8%</strong></div>
+
+        <p class="eyebrow">
+          <span
+            aria-hidden="true"
+          ></span>
+
+          Welcome back
+        </p>
+
+
+        <h1 id="story-title">
+          Your best work
+          <br>
+          <em>is waiting.</em>
+        </h1>
+
+
+        <p class="story-copy">
+          Pick up where you left off and keep the
+          important work moving forward.
+        </p>
+
+
+        <!-- Momentum Card -->
+        <div
+          class="signal-card"
+          aria-label="Team momentum has increased by 24.8 percent over the last 30 days"
+        >
+
+          <div class="signal-head">
+
+            <span>
+              TEAM MOMENTUM
+            </span>
+
+            <b>
+              LIVE
+            </b>
+
+          </div>
+
+
+          <div class="signal-graph">
+
+            <i aria-hidden="true"></i>
+            <i aria-hidden="true"></i>
+            <i aria-hidden="true"></i>
+            <i aria-hidden="true"></i>
+            <i aria-hidden="true"></i>
+            <i aria-hidden="true"></i>
+            <i aria-hidden="true"></i>
+
+
+            <svg
+              viewBox="0 0 420 100"
+              preserveAspectRatio="none"
+              role="img"
+              aria-label="Upward team momentum graph"
+            >
+
+              <path
+                d="M0 82
+                   C36 80 43 70 72 72
+                   S114 52 140 64
+                   S184 43 214 50
+                   S252 44 274 30
+                   S318 42 340 21
+                   S387 26 420 5"
+                fill="none"
+                stroke="#c5f45a"
+                stroke-width="3"
+                stroke-linecap="round"
+              />
+
+            </svg>
+
+          </div>
+
+
+          <div class="signal-foot">
+
+            <span>
+              LAST 30 DAYS
+            </span>
+
+            <strong>
+              +24.8%
+            </strong>
+
+          </div>
+
         </div>
+
       </div>
-      <div class="story-footer"><span>© 2024 Nexus Technologies, Inc.</span><span>Privacy <i>·</i> Terms</span></div>
+
+
+      <!-- Story Footer -->
+      <footer class="story-footer">
+
+        <span>
+          © 2026 Nexus Technologies, Inc.
+        </span>
+
+        <span>
+          <a href="#privacy">
+            Privacy
+          </a>
+
+          <i aria-hidden="true">
+            ·
+          </i>
+
+          <a href="#terms">
+            Terms
+          </a>
+        </span>
+
+      </footer>
+
     </section>
 
-    <section class="login-panel" aria-labelledby="login-title">
-      <div class="panel-top"><span>SECURE WORKSPACE ACCESS</span><a href="index.html">Back to website <b>↗</b></a></div>
+
+    <!-- ======================================
+         LOGIN PANEL
+    ======================================= -->
+
+    <section
+      class="login-panel"
+      aria-labelledby="login-title"
+    >
+
+      <!-- Panel Header -->
+      <header class="panel-top">
+
+        <span>
+          SECURE WORKSPACE ACCESS
+        </span>
+
+        <a href="index.html">
+          Back to website
+          <b aria-hidden="true">↗</b>
+        </a>
+
+      </header>
+
+
+      <!-- Login Form -->
       <div class="form-wrap">
-        <div class="form-intro"><p class="eyebrow"><span></span> Sign in</p><h2 id="login-title">Welcome back.</h2><p>Enter your details to access your workspace.</p></div>
-        <form id="login-form">
-          <label for="email">Work email</label>
-          <input id="email" name="email" type="email" autocomplete="email" placeholder="you@company.com" required>
-          <div class="password-label"><label for="password">Password</label><a href="mailto:hello@nexus.work?subject=Password%20reset%20request">Forgot password?</a></div>
-          <div class="password-input"><input id="password" name="password" type="password" autocomplete="current-password" placeholder="Enter your password" required><button type="button" id="password-toggle" aria-label="Show password">Show</button></div>
-          <label class="remember"><input type="checkbox" name="remember"><span class="checkmark"></span><span>Remember me for 30 days</span></label>
-          <button class="submit-button" type="submit">Log in <span>↗</span></button>
-          <p class="form-message" role="status" aria-live="polite"></p>
-        </form>
-        <div class="divider"><span>or continue with</span></div>
-        <button class="sso-button" type="button" id="google-login"><span class="google-mark">G</span> Continue with Google</button>
-        <p class="signup">Don’t have a Nexus account? <a href="mailto:hello@nexus.work">Talk to our team <span>↗</span></a></p>
-      </div>
-      <div class="panel-mark">N</div>
-    </section>
-  </main>
-  <script>
-    const password = document.querySelector('#password');
-    const passwordToggle = document.querySelector('#password-toggle');
-    passwordToggle.addEventListener('click', () => {
-      const isPassword = password.type === 'password';
-      password.type = isPassword ? 'text' : 'password';
-      passwordToggle.textContent = isPassword ? 'Hide' : 'Show';
-      passwordToggle.setAttribute('aria-label', isPassword ? 'Hide password' : 'Show password');
-    });
-    document.querySelector('#login-form').addEventListener('submit', event => {
-      event.preventDefault();
-      const email = document.querySelector('#email').value.trim().toLowerCase();
-      const passwordValue = document.querySelector('#password').value;
-      const message = document.querySelector('.form-message');
 
-      if (email !== 'demo@nexus.work' || passwordValue !== 'nexus123') {
-        message.textContent = 'Use demo@nexus.work with password nexus123.';
-        return;
+        <div class="form-intro">
+
+          <p class="eyebrow">
+
+            <span
+              aria-hidden="true"
+            ></span>
+
+            Sign in
+
+          </p>
+
+
+          <h2 id="login-title">
+            Welcome back.
+          </h2>
+
+
+          <p>
+            Enter your details to access your workspace.
+          </p>
+
+        </div>
+
+
+        <form
+          id="login-form"
+          novalidate
+        >
+
+          <!-- Email -->
+          <div class="form-field">
+
+            <label for="email">
+              Work email
+            </label>
+
+            <input
+              id="email"
+              name="email"
+              type="email"
+              autocomplete="email"
+              inputmode="email"
+              placeholder="you@company.com"
+              required
+              aria-describedby="email-error"
+            >
+
+            <small
+              class="field-error"
+              id="email-error"
+              aria-live="polite"
+            ></small>
+
+          </div>
+
+
+          <!-- Password -->
+          <div class="form-field">
+
+            <div class="password-label">
+
+              <label for="password">
+                Password
+              </label>
+
+              <a
+                href="mailto:hello@nexus.work?subject=Password%20reset%20request"
+              >
+                Forgot password?
+              </a>
+
+            </div>
+
+
+            <div class="password-input">
+
+              <input
+                id="password"
+                name="password"
+                type="password"
+                autocomplete="current-password"
+                placeholder="Enter your password"
+                minlength="6"
+                required
+                aria-describedby="password-error"
+              >
+
+
+              <button
+                type="button"
+                id="password-toggle"
+                aria-label="Show password"
+                aria-pressed="false"
+              >
+                Show
+              </button>
+
+            </div>
+
+
+            <small
+              class="field-error"
+              id="password-error"
+              aria-live="polite"
+            ></small>
+
+          </div>
+
+
+          <!-- Remember Me -->
+          <label class="remember">
+
+            <input
+              type="checkbox"
+              name="remember"
+              id="remember"
+            >
+
+            <span
+              class="checkmark"
+              aria-hidden="true"
+            ></span>
+
+            <span>
+              Remember me for 30 days
+            </span>
+
+          </label>
+
+
+          <!-- Submit -->
+          <button
+            class="submit-button"
+            type="submit"
+            id="submit-button"
+          >
+
+            <span>
+              Log in
+            </span>
+
+            <span aria-hidden="true">
+              ↗
+            </span>
+
+          </button>
+
+
+          <!-- Form Status -->
+          <p
+            class="form-message"
+            id="form-message"
+            role="status"
+            aria-live="polite"
+          ></p>
+
+        </form>
+
+
+        <!-- Divider -->
+        <div
+          class="divider"
+          role="separator"
+        >
+          <span>
+            or continue with
+          </span>
+        </div>
+
+
+        <!-- Google -->
+        <button
+          class="sso-button"
+          type="button"
+          id="google-login"
+        >
+
+          <span
+            class="google-mark"
+            aria-hidden="true"
+          >
+            G
+          </span>
+
+          <span>
+            Continue with Google
+          </span>
+
+        </button>
+
+
+        <!-- Sign Up -->
+        <p class="signup">
+
+          Don't have a Nexus account?
+
+          <a href="mailto:hello@nexus.work">
+            Talk to our team
+
+            <span aria-hidden="true">
+              ↗
+            </span>
+
+          </a>
+
+        </p>
+
+      </div>
+
+
+      <!-- Decorative Mark -->
+      <div
+        class="panel-mark"
+        aria-hidden="true"
+      >
+        N
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- ========================================
+       JAVASCRIPT
+  ========================================= -->
+
+  <script>
+    (() => {
+      "use strict";
+
+      /* ----------------------------------------
+         Elements
+      ---------------------------------------- */
+
+      const form =
+        document.getElementById("login-form");
+
+      const emailInput =
+        document.getElementById("email");
+
+      const passwordInput =
+        document.getElementById("password");
+
+      const passwordToggle =
+        document.getElementById("password-toggle");
+
+      const rememberInput =
+        document.getElementById("remember");
+
+      const submitButton =
+        document.getElementById("submit-button");
+
+      const googleButton =
+        document.getElementById("google-login");
+
+      const message =
+        document.getElementById("form-message");
+
+      const emailError =
+        document.getElementById("email-error");
+
+      const passwordError =
+        document.getElementById("password-error");
+
+
+      /* ----------------------------------------
+         Password Visibility
+      ---------------------------------------- */
+
+      passwordToggle.addEventListener(
+        "click",
+        () => {
+
+          const shouldShow =
+            passwordInput.type === "password";
+
+          passwordInput.type =
+            shouldShow ? "text" : "password";
+
+          passwordToggle.textContent =
+            shouldShow ? "Hide" : "Show";
+
+          passwordToggle.setAttribute(
+            "aria-label",
+            shouldShow
+              ? "Hide password"
+              : "Show password"
+          );
+
+          passwordToggle.setAttribute(
+            "aria-pressed",
+            String(shouldShow)
+          );
+
+        }
+      );
+
+
+      /* ----------------------------------------
+         Clear Errors
+      ---------------------------------------- */
+
+      const clearErrors = () => {
+
+        emailError.textContent = "";
+        passwordError.textContent = "";
+        message.textContent = "";
+
+        emailInput.removeAttribute(
+          "aria-invalid"
+        );
+
+        passwordInput.removeAttribute(
+          "aria-invalid"
+        );
+
+      };
+
+
+      /* ----------------------------------------
+         Validation
+      ---------------------------------------- */
+
+      const validateForm = () => {
+
+        clearErrors();
+
+        let valid = true;
+
+
+        if (!emailInput.value.trim()) {
+
+          emailError.textContent =
+            "Please enter your work email.";
+
+          emailInput.setAttribute(
+            "aria-invalid",
+            "true"
+          );
+
+          valid = false;
+
+        } else if (!emailInput.validity.valid) {
+
+          emailError.textContent =
+            "Please enter a valid email address.";
+
+          emailInput.setAttribute(
+            "aria-invalid",
+            "true"
+          );
+
+          valid = false;
+
+        }
+
+
+        if (!passwordInput.value) {
+
+          passwordError.textContent =
+            "Please enter your password.";
+
+          passwordInput.setAttribute(
+            "aria-invalid",
+            "true"
+          );
+
+          valid = false;
+
+        } else if (
+          passwordInput.value.length < 6
+        ) {
+
+          passwordError.textContent =
+            "Password must be at least 6 characters.";
+
+          passwordInput.setAttribute(
+            "aria-invalid",
+            "true"
+          );
+
+          valid = false;
+
+        }
+
+
+        return valid;
+
+      };
+
+
+      /* ----------------------------------------
+         Login
+      ---------------------------------------- */
+
+      form.addEventListener(
+        "submit",
+        event => {
+
+          event.preventDefault();
+
+
+          if (!validateForm()) {
+
+            const firstInvalid =
+              form.querySelector(
+                '[aria-invalid="true"]'
+              );
+
+            firstInvalid?.focus();
+
+            return;
+
+          }
+
+
+          const email =
+            emailInput.value
+              .trim()
+              .toLowerCase();
+
+
+          /*
+            DEMO AUTHENTICATION
+
+            This stores a session flag only.
+            It is NOT secure authentication.
+
+            A production application should send
+            credentials to a backend/API and allow
+            the server to validate the account.
+          */
+
+          submitButton.disabled = true;
+
+          submitButton.querySelector(
+            "span:first-child"
+          ).textContent = "Signing in...";
+
+
+          sessionStorage.setItem(
+            "nexusLoggedIn",
+            "true"
+          );
+
+
+          if (rememberInput.checked) {
+
+            localStorage.setItem(
+              "nexusRememberedEmail",
+              email
+            );
+
+          } else {
+
+            localStorage.removeItem(
+              "nexusRememberedEmail"
+            );
+
+          }
+
+
+          message.textContent =
+            "Login successful. Redirecting...";
+
+
+          window.setTimeout(
+            () => {
+              window.location.replace(
+                "index.html"
+              );
+            },
+            500
+          );
+
+        }
+      );
+
+
+      /* ----------------------------------------
+         Google Sign-In
+      ---------------------------------------- */
+
+      googleButton.addEventListener(
+        "click",
+        () => {
+
+          message.textContent =
+            "Google sign-in is not configured for this demo.";
+
+        }
+      );
+
+
+      /* ----------------------------------------
+         Restore Remembered Email
+      ---------------------------------------- */
+
+      const rememberedEmail =
+        localStorage.getItem(
+          "nexusRememberedEmail"
+        );
+
+      if (rememberedEmail) {
+
+        emailInput.value =
+          rememberedEmail;
+
+        rememberInput.checked =
+          true;
+
       }
 
-      sessionStorage.setItem('nexusLoggedIn', 'true');
-      message.textContent = 'Login successful. Redirecting...';
-      window.setTimeout(() => { window.location.href = 'index.html'; }, 500);
-    });
-    document.querySelector('#google-login').addEventListener('click', () => {
-      document.querySelector('.form-message').textContent = 'Google sign-in is not configured for this demo.';
-    });
+    })();
   </script>
+
 </body>
 </html>
